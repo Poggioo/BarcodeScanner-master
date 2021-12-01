@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".ConnectionActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_weight="10"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/TS_logo"
+                    android:layout_width="350sp"
+                    android:layout_height="150sp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/connect_logo_des"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70px"
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginTop="10px"
+                    android:background="#808080"
+                    android:text="TimberSmart Barcode Scanner"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50px"
+                    android:textStyle="bold"
+                    />
+
+
+
+                <Button
+                    android:id="@+id/btn_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="30sp"
+                    android:background="@drawable/bg_btn"
+                    android:enabled="true"
+                    android:paddingLeft="8sp"
+                    android:paddingRight="8dp"
+                    android:text="@string/btn_start_scan"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>
